@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Anumeya Sehgal">
+	<div class="md:mx-10 lg:px-20 justify-center my-5 lg:my-auto">
+    <div class="flex flex-col lg:flex-row justify-center">
+      <div class="bg-black flex flex-col flex-shrink-0 space-y-5 items-center justify-center">
+        <img src="./DP.jpg" class="rounded-full bg-navy border-crimson border-3 w-64"></img>
+        <div class="flex flex-col justify-start md:space-x-2 items-center">
+          <h1 class="text-3xl md:text-2xl text-white font-bold">Hi! I am</h1>
+          <h1 class="text-3xl md:text-2xl text-red font-bold">Surya Undapalli</h1>
+        </div>
+        <div class="hidden lg:grid lg:grid-flow-row w-full text-white justify-evenly text-left gap-1 mt-50">
+      <a href="https://github.com/SudoSurya" class="inline space-x-2 justify-center text-md">
+        <i class="fa-brands fa-github"></i><p class="md:inline hidden">Sudo Surya</p>
+      </a>
+      <a href="www.linkedin.com/in/suryaundapalli" class="inline space-x-2 justify-center">
+        <i class="fa-brands fa-linkedin"></i><p class="md:inline hidden">Surya Undapalli</p>
+      </a>
+      <a href="https://twitter.com/SudoSuryaa" class="inline space-x-2 justify-center">
+        <i class="fa-brands fa-x-twitter"></i><p class="md:inline hidden">Surya</p>
+      </a>
+        </div>
+      </div>
+      <div class="items-center flex flex-col space-y-10 px-10 md:px-20 lg:my-10">
+        <h1 class="text-3xl text-white font-bold hidden lg:flex">About</h1>
+        <p class="text-white text-center">
+I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️
+I am fluent in classics like Javascript,Java and Python.
+My field of Interest's are building new  Web Technologies and Products and also in areas related to Progressive Web Apps
+        </p>
+        <hr class="text-white w-full mt-10 lg:hidden">
+        <h1 class="text-3xl text-white font-bold">Projects</h1>
+        <div class="bg-black items-center grid grid-cols-1 md:grid-cols-2 gap-5">
+            <Card title='File Compressor' href='https://github.com/SudoSurya/filecompressor'>
+            The File Compressor project is a command-line utility developed in Go that allows users to compress various types of files, JPEG images, and PDF documents.
+            </Card>
+            <Card title='Online Exams Portal' href='https://github.com/SudoSurya/Online-Exam-Final-Project-'>
+            An online examination system is a web-based software application that enables educational institutions to conduct exams and assessments over the internet.
+            </Card>
+            <Card title='Pokedex CLI' href='https://github.com/SudoSurya/pokedex-cli-go'>
+                 Pokédex CLI is a command-line interface (CLI) application built with Go, bringing the world of Pokémon to your terminal. This interactive Pokédex allows users to explore detailed information about their favorite Pokémon, from Bulbasaur to Mewtwo.
+            </Card>
+            <Card title='interpreter in Go' href='https://github.com/SudoSurya/interpreter-in-go'>
+    This is a simple interpreter written in Go. It is based on the book Writing An Interpreter In Go by Thorsten Ball.
+            </Card>
+          </div>
+          <hr class="text-white w-full mt-10 lg:hidden">
+          <h1 class="text-3xl text-white font-bold">Blog</h1>
+          <p class="text-white">Work in progress</p>
+          <hr class="text-white w-full mt-10 lg:hidden">
+        </div>
+      </div>
+	</div>
+</Layout>
